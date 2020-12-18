@@ -21,3 +21,11 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+  
+
+$(function(){
+        $('#menu').slicknav({
+            prependTo: '.mobile_menu',
+            allowParentLink:true,
+        });
+    });

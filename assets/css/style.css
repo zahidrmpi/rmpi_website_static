@@ -33,7 +33,7 @@ header{
 .comunicating_address {
     margin: 0;
     padding: 53px 10px;
-    text-align: right;
+    /* text-align: right; */
 }
 /* header area end */
 
@@ -53,7 +53,67 @@ header{
     text-align: center;
   }
 /* slider area end */
+ /* main menu area start */
+ .mainmenu {
+    background: #ddd;
+}
 
+.mainmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainmenu ul li {
+    display: inline;
+    /* border-right: 1px solid #000; */
+    position: relative;
+}
+
+.mainmenu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 18px 15px;
+    color: #000;
+    font-size: 16px;
+}
+
+.mainmenu ul li:hover ul.sub-menu {
+    color: maroon;
+    visibility:visible ;
+    z-index: 99;
+    opacity: 1;
+}
+
+.mainmenu ul li ul.sub-menu {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    background: #fff;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: 2s;
+}
+
+.mainmenu ul li ul.sub-menu li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.mainmenu ul li ul.sub-menu li a {
+    display: block;
+    padding: 10px 10px;
+}
+
+ .slicknav_menu {
+    display:none;
+} 
+
+ /* main menu area end */
 /* main news scroll area start */
 .news_scroll_area_content{
     font-size: 20px;
@@ -81,6 +141,9 @@ section.main_section_area {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
+}
+.sidebar_card {
+    margin-bottom: 5px;
 }
 /* sidebar area start */
 
