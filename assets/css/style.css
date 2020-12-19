@@ -2,9 +2,21 @@ body {
     font-family: 'Kalpurush', Arial, sans-serif !important;
    background-color: aquamarine;
 }
+a{
+    text-decoration: none;
+}
+li,ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 .main-area-bg{
     background-color: #fff;
     padding: 0;
+}
+.top-bar{
+    height: 30px;
+    background-color:#4D0100 ;
 }
 /* header area start */
 header{
@@ -73,11 +85,14 @@ header{
 .mainmenu ul li a {
     text-decoration: none;
     display: inline-block;
-    padding: 18px 15px;
+    padding: 18px 25px;
     color: #000;
     font-size: 16px;
 }
-
+.mainmenu ul li a:hover {
+    background: #fff;
+    transition: all 1s;
+}
 .mainmenu ul li:hover ul.sub-menu {
     color: maroon;
     visibility:visible ;
@@ -96,7 +111,7 @@ header{
     margin: 0;
     visibility: hidden;
     opacity: 0;
-    transform: 2s;
+    transition: all 1s;
 }
 
 .mainmenu ul li ul.sub-menu li {
@@ -129,9 +144,92 @@ section.main_section_area {
 
 /* content area start  */
 .content {
+ 
+}
+.pm_messege_part{
     background: #ccc;
     padding: 10px;
 }
+.notice_board{
+    padding: 30px 30px 70px 30px;
+    background-color: #ddd;
+    margin: 5px 0;
+    position: relative;
+}
+
+.notice_board ul li:before {
+    content: '\f35a';
+    font-family:"Font Awesome 5 Free";;
+    float: left;
+    margin-left: -1.5em;
+    color: #0074D9;
+  }
+  a.notice_button {
+    border-radius: 10px;
+    position: absolute;
+    padding: 8px 20px;
+    background-color: #0074D9;;
+    bottom: 7px;
+    right: 50px;
+    color: #fff;
+}
+/* institute addressing area start */
+.institute_addressing {
+    background: #ccc;
+    padding: 20px 20px;
+}
+
+
+.institute_addressing_title {
+    background: #4B33A4;
+    color: #fff;
+    padding: 7px 0px 0px 7px;
+}
+/* institute addressing area end */
+/* covid diabetic area start */
+.covid_diabetic_area_top img {
+    width: 100%;
+}
+.covid_diabetic_area_bottom {
+    background: #ddd;
+    text-align: center;
+    padding: 30px;
+}
+
+.covid_diabetic_area_bottom a {
+    border: 1px solid #000;
+    padding: 7px 20px;
+    border-radius: 5px;
+   
+}
+
+/* covid diabetic area end */
+
+/* inner main part area start */
+.card-body.card-left-img img {
+    float: left;
+    padding-right: 40px;
+}
+
+.card-left-img {
+    background: #F5F5F5;
+}
+
+.card-body ul {
+    text-align: left;
+}
+.card-body ul li:before {
+    content: '\f152';
+    font-family:"Font Awesome 5 Free";;
+    float: left;
+    margin-left: -1.5em;
+    color: #000;
+  }
+  .main_part_box .card{
+      margin-bottom: 15px;
+  }
+/* inner main part area end */
+
 /* content area end  */
 
 /* sidebar area start */
@@ -144,6 +242,19 @@ section.main_section_area {
 }
 .sidebar_card {
     margin-bottom: 5px;
+}
+.quiz_part{
+    height: 350px;
+}
+a.quiz_part_button {
+    border: 1px solid red;
+    padding: 10px 20px;
+    color: #000;
+}
+
+a.quiz_part_button:hover {
+    background: darkred;
+    color: #fff;
 }
 /* sidebar area start */
 
