@@ -1,6 +1,6 @@
 body {
     font-family: 'Kalpurush', Arial, sans-serif !important;
-   background-color: aquamarine;
+   background-image: url(../img/bg_image.jpg);
 }
 a{
     text-decoration: none;
@@ -67,7 +67,7 @@ header{
 /* slider area end */
  /* main menu area start */
  .mainmenu {
-    background: #ddd;
+    background: #fff;
 }
 
 .mainmenu ul {
@@ -90,7 +90,7 @@ header{
     font-size: 16px;
 }
 .mainmenu ul li a:hover {
-    background: #fff;
+    background: #ddd;
     transition: all 1s;
 }
 .mainmenu ul li:hover ul.sub-menu {
@@ -214,9 +214,9 @@ section.main_section_area {
 .card-left-img {
     background: #F5F5F5;
 }
-
 .card-body ul {
     text-align: left;
+    padding: 0px 0px 0px 24px;
 }
 .card-body ul li:before {
     content: '\f152';
